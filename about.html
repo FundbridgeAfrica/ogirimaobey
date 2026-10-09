@@ -214,6 +214,64 @@
             color: var(--matte-black);
         }
 
+        .bullet-list {
+            list-style: none;
+            margin-bottom: 24px;
+            padding-left: 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•";
+            color: var(--terracotta);
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .price-tag {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--pure-white);
+        }
+
+        .price-tag span.old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .price-tag span.new-price {
+            color: var(--terracotta);
+            font-size: 22px;
+        }
+
+        .urgency-badge {
+            display: inline-block;
+            background-color: rgba(224, 74, 51, 0.15);
+            color: var(--terracotta);
+            border: 1px solid var(--terracotta);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+
         /* 7. New Connection Portals Grid Module */
         .social-portal-panel {
             border-top: 1px solid var(--border-dark);
@@ -364,7 +422,7 @@
 
                 <hr style="border: 0; border-top: 1px solid var(--border-dark); margin: 0;">
 
-                <!-- Pillar 2: Keynote Speaking & Life Coaching ( बुकिंग इंटरफेस सुधार ) -->
+                <!-- Pillar 2: Keynote Speaking & Life Coaching -->
                 <article class="pillar-row reverse reveal">
                     <div class="image-panel pillar-media">
                         <img src="WhatsApp Image 2026-05-27 at 03.33.40.jpeg" alt="Ogirima Obey Keynote Presentation" class="panel-img">
@@ -398,6 +456,43 @@
                             As a published author, his works serve as core blueprints for personal strategy. Following the release of <em>Dear Future Wife</em> and the business guide <em>From Idea to Empire</em>, he is currently writing <strong>DETOX</strong>—a manual tracking the exact behavioral mechanics and frameworks required to break free from hidden habits and negative loops.
                         </p>
                         <a href="books.html" class="action-link">Explore Books</a>
+                    </div>
+                </article>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-dark); margin: 0;">
+
+                <!-- Pillar 4: Business Masterclass -->
+                <article class="pillar-row reverse reveal">
+                    <div class="image-panel pillar-media">
+                        <img src="WhatsApp Image 2026-05-27 at 03.32.36.jpeg" alt="Ogirima Obey Business Masterclass" class="panel-img">
+                    </div>
+                    <div class="pillar-text-block">
+                        <div class="urgency-badge">Limited Spots Available</div>
+                        <h2 class="pillar-title">1-Week Business <span>Masterclass</span></h2>
+                        <p class="bio-text">
+                            A packed, practical 1-week masterclass designed to help you start, launch, and scale a real business in Africa—even if you are starting with zero capital.
+                        </p>
+                        
+                        <ul class="bullet-list">
+                            <li><strong>African Market Entry:</strong> Clear steps to build a real business made for Africa.</li>
+                            <li><strong>Niche Focus:</strong> Find high-value gaps and stand out in your market.</li>
+                            <li><strong>Personal Branding:</strong> Build a strong name that pulls in high-paying clients.</li>
+                            <li><strong>Team Building:</strong> How to recruit top talents to build with you on 0 cashflow.</li>
+                            <li><strong>Idea to Live Product:</strong> Launch your product from scratch on a 0 naira budget.</li>
+                            <li><strong>Sales Book & Secrets:</strong> Get my private sales book and closing strategies.</li>
+                            <li><strong>Free Live Website Bonus:</strong> Get a free live functional website deployed for you after the class.</li>
+                        </ul>
+
+                        <div class="price-tag">
+                            <span class="old-price">₦450,000</span>
+                            <span class="new-price">₦149,999</span>
+                        </div>
+
+                        <div class="booking-actions-row">
+                            <a href="https://selar.com/5755yb959f" target="_blank" class="action-link">
+                                Reserve Your Spot Now
+                            </a>
+                        </div>
                     </div>
                 </article>
 
