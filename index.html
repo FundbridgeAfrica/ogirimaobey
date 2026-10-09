@@ -110,6 +110,12 @@
             line-height: 1.6;
         }
 
+        .hero-actions-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
         .action-button {
             display: inline-block;
             background-color: var(--terracotta);
@@ -130,6 +136,76 @@
             background-color: var(--pure-white);
             color: var(--matte-black);
             transform: translateY(-3px);
+        }
+
+        .action-button.secondary-btn {
+            background-color: transparent;
+            border: 2px solid var(--border-dark);
+            color: var(--pure-white);
+        }
+
+        .action-button.secondary-btn:hover {
+            border-color: var(--pure-white);
+            background-color: var(--pure-white);
+            color: var(--matte-black);
+        }
+
+        /* Hero Featured Masterclass Banner Box */
+        .hero-masterclass-banner {
+            background: linear-gradient(135deg, rgba(224, 74, 51, 0.12) 0%, var(--deep-charcoal) 100%);
+            border: 2px solid var(--terracotta);
+            padding: 32px;
+            border-radius: 6px;
+            margin-top: 40px;
+            max-width: 540px;
+        }
+
+        .banner-badge {
+            display: inline-block;
+            background-color: var(--terracotta);
+            color: var(--pure-white);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 3px;
+            margin-bottom: 12px;
+        }
+
+        .banner-title {
+            font-size: 22px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .banner-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .banner-price-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .banner-old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .banner-new-price {
+            color: var(--terracotta);
+            font-size: 24px;
+            font-weight: 900;
         }
 
         .hero-graphic-box {
@@ -396,9 +472,14 @@
             }
 
             .hero-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 32px;
+            }
+
+            .hero-actions-group {
                 flex-direction: row;
                 align-items: center;
-                gap: 40px;
             }
 
             .hero-graphic-box {
@@ -458,8 +539,26 @@
                 <div class="hero-tag">Life Coach & Kingdom Masculinity</div>
                 <h1 class="hero-title">FLEE<br>DON'T<br><span>FLIRT</span></h1>
                 <div class="hero-meta">
-                    <p class="hero-desc">Raising a new generation of kingdom, disciplined, visionary, and comprehensive men. Building unshakeable character, and legacy, across the globe</p>
-                    <a href="https://whatsapp.com/channel/0029Vb68Lns3QxS4cYxmlx1h" target="_blank" class="action-button">Join My Community</a>
+                    <p class="hero-desc">Raising a new generation of kingdom, disciplined, visionary, and comprehensive men. Building unshakeable character, and legacy, across the globe.</p>
+                    
+                    <div class="hero-actions-group">
+                        <a href="https://whatsapp.com/channel/0029Vb68Lns3QxS4cYxmlx1h" target="_blank" class="action-button secondary-btn">Join My Community</a>
+                    </div>
+
+                    <!-- Featured Business Masterclass Banner -->
+                    <div class="hero-masterclass-banner">
+                        <div class="banner-badge">Featured Masterclass • Limited Slots</div>
+                        <h3 class="banner-title">1-Week Intensive Business Masterclass</h3>
+                        <p class="banner-desc">Learn how to start a business in Africa, master niche selection, recruit top talent on zero cashflow, and build your product from scratch. <strong>Get a FREE live website built for you after the class!</strong></p>
+                        
+                        <div class="banner-price-row">
+                            <span class="banner-old-price">₦450,000</span>
+                            <span class="banner-new-price">₦149,999</span>
+                        </div>
+
+                        <a href="https://selar.com/5755yb959f" target="_blank" class="action-button">Secure Your Spot Now</a>
+                    </div>
+
                 </div>
             </div>
             <div class="hero-graphic-box">
